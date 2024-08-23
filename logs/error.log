@@ -1,0 +1,28 @@
+[23-Aug-2024 16:54:03 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\Main' not found in /var/www/api-user-crud/public/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/api-user-crud/public/index.php on line 11
+[23-Aug-2024 16:54:15 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\Main' not found in /var/www/api-user-crud/public/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/api-user-crud/public/index.php on line 11
+[23-Aug-2024 16:57:31 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\Main' not found in /var/www/api-user-crud/public/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/api-user-crud/public/index.php on line 11
+[23-Aug-2024 16:58:06 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\Main' not found in /var/www/api-user-crud/public/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/api-user-crud/public/index.php on line 11
+[23-Aug-2024 16:58:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\Main' not found in /var/www/api-user-crud/public/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/api-user-crud/public/index.php on line 11
+[23-Aug-2024 16:58:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\Main' not found in /var/www/api-user-crud/public/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/api-user-crud/public/index.php on line 11
+[23-Aug-2024 16:58:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\Main' not found in /var/www/api-user-crud/public/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/api-user-crud/public/index.php on line 11
