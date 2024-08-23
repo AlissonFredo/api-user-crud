@@ -26,3 +26,4 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /var/www/api-user-crud/public/index.php on line 11
+[23-Aug-2024 18:45:35 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/api-user-crud/src/core/Router.php on line 48
