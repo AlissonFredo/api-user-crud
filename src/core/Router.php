@@ -39,8 +39,6 @@ class Router
                     $response = $controller->$action($request, $params);
                 } else if ($method === "POST") {
                     $response = $controller->$action($request);
-                } else {
-                    $response = $controller->$action();
                 }
 
                 if ($response !== null) {
