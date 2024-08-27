@@ -7,11 +7,19 @@ use PDOException;
 
 class Database
 {
-    private $host = 'localhost';
-    private $dbName = 'api_user_crud';
-    private $username = 'root';
-    private $password = '';
+    private $host;
+    private $dbName;
+    private $username;
+    private $password;
     private $conn;
+
+    public function __construct()
+    {
+        $this->host = Config::get('DB_HOST');
+        $this->dbName = Config::get('DB_NAME');
+        $this->username = Config::get('DB_USER');
+        $this->password = Config::get('DB_PASS');
+    }
 
     public function getConnection()
     {
