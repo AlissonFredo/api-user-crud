@@ -6,7 +6,6 @@ Este projeto é uma API para realizar operações de CRUD (Create, Read, Update,
 
 Para começar a usar o projeto, siga os passos abaixo:
 
-
 1. **Instale as dependências:**
 
     Execute o comando abaixo para instalar as dependências do projeto definidas no arquivo `composer.json`:
@@ -40,10 +39,95 @@ Para começar a usar o projeto, siga os passos abaixo:
 A API suporta as seguintes operações de CRUD para gerenciar usuários:
 
 - **Criar Usuário**: `POST /users`
-- **Listar Usuários**: `GET /users`
-- **Obter Detalhes do Usuário**: `GET /users/{id}`
-- **Atualizar Usuário**: `PUT /users/{id}`
-- **Deletar Usuário**: `DELETE /users/{id}`
+- **Listar Usuários**: `GET /users/list`
+- **Obter Detalhes do Usuário**: `GET /users/show?id={id}`
+- **Atualizar Usuário**: `PUT /users?id={id}`
+- **Deletar Usuário**: `DELETE /users?id={id}`
 
 ### Exemplos de Requisição
 
+Aqui estão alguns exemplos de como realizar requisições para a API:
+
+- **Criar Usuário**
+
+    ```bash
+    POST http://api-user-crud.local.com.br/users
+    ```
+
+    **Corpo da Requisição:**
+    ```json
+    {
+        "name": "example",
+        "email": "example@gmail.com",
+        "phoneNumber": "00000000000",
+        "birthDate": "0000-00-00",
+        "address": "example"
+    }
+    ```
+
+- **Listar Usuários**
+
+    ```bash
+    GET http://api-user-crud.local.com.br/users/list
+    ```
+
+- **Obter Detalhes do Usuário**
+
+    ```bash
+    GET http://api-user-crud.local.com.br/users/show?id={id}
+    ```
+
+- **Atualizar Usuário**
+
+    ```bash
+    PUT http://api-user-crud.local.com.br/users?id={id}
+    ```
+
+    **Corpo da Requisição:**
+    ```json
+    {
+        "name": "example",
+        "email": "example@gmail.com",
+        "phoneNumber": "00000000000",
+        "birthDate": "0000-00-00",
+        "address": "example"
+    }
+    ```
+
+- **Deletar Usuário**
+
+    ```bash
+    DELETE http://api-user-crud.local.com.br/users?id={id}
+    ```
+
+## Estrutura do Projeto
+
+A estrutura do projeto `api-user-crud` é organizada da seguinte maneira:
+
+- **database/**
+    - `database.sql`
+- **logs/**
+    - `error.log`
+- **public/**
+    - `index.php`
+    - `.htaccess`
+- **src/**
+    - **controllers/**
+        - `UserController.php`
+    - **core/**
+        - `Config.php`
+        - `Database.php`
+        - `Main.php`
+        - `Router.php`
+    - **models/**
+        - `User.php`
+    - **repositories/**
+        - `UserRepository.php`
+    - **services/**
+        - `UserService.php`
+- `.env`
+- `.env.example`
+- `.gitignore`
+- `composer.json`
+- `configure.server.sh`
+- `README.md`
