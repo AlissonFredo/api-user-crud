@@ -34,8 +34,8 @@ class UserRepository
 
     public function create(User $user)
     {
-        $query = "INSERT INTO users (name, email, phone_number, birth_date, address, created_at, updated_at) 
-            VALUES (:name, :email, :phone_number, :birth_date, :address, :created_at, :updated_at)";
+        $query = "INSERT INTO users (name, email, phone_number, birth_date, address) 
+            VALUES (:name, :email, :phone_number, :birth_date, :address)";
 
         $stmt = $this->conn->prepare($query);
 
@@ -44,8 +44,6 @@ class UserRepository
         $stmt->bindParam(':phone_number', $user->getPhoneNumber());
         $stmt->bindParam(':birth_date', $user->getBirthDate());
         $stmt->bindParam(':address', $user->getAddress());
-        $stmt->bindParam(':created_at', $user->getCreatedAt());
-        $stmt->bindParam(':updated_at', $user->getUpdatedAt());
 
         return $stmt->execute();
     }
@@ -56,10 +54,8 @@ class UserRepository
                 name = :name, 
                 email = :email, 
                 phone_number = :phone_number, 
-                birth_date = :birth_date,
-                address = :address,
-                created_at = :created_at,
-                updated_at = :updated_at
+                birth_date = :birth_date, 
+                address = :address 
             WHERE id = :id
         ";
 
@@ -70,8 +66,6 @@ class UserRepository
         $stmt->bindParam(':phone_number', $user->getPhoneNumber());
         $stmt->bindParam(':birth_date', $user->getBirthDate());
         $stmt->bindParam(':address', $user->getAddress());
-        $stmt->bindParam(':created_at', $user->getCreatedAt());
-        $stmt->bindParam(':updated_at', $user->getUpdatedAt());
         $stmt->bindParam(':id', $id);
 
         return $stmt->execute();

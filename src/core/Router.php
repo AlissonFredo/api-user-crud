@@ -27,7 +27,7 @@ class Router
 
                 $request = [];
 
-                if ($method === "POST") {
+                if ($method === "POST" || $method === "PUT" ) {
                     $request = json_decode(file_get_contents("php://input"), true);
                 }
 

@@ -87,4 +87,27 @@ class User
     {
         return $this->updatedAt;
     }
+
+    public function __toString()
+    {
+        $id = $this->id ?? 'N/A';
+        $name = $this->name ?? 'N/A';
+        $email = $this->email ?? 'N/A';
+        $phoneNumber = $this->phoneNumber ?? 'N/A';
+        $birthDate = $this->birthDate ?? 'N/A';
+        $address = $this->address ?? 'N/A';
+        $createdAt = $this->createdAt ?? 'N/A';
+        $updatedAt = $this->updatedAt ?? 'N/A';
+
+        return "User [
+            id={$id}, 
+            name={$name}, 
+            email={$email}, 
+            phoneNumber={$phoneNumber}, 
+            birthDate={$birthDate}, 
+            address={$address}, 
+            createdAt={$createdAt}, 
+            updatedAt={$updatedAt}
+        ]";
+    }
 }

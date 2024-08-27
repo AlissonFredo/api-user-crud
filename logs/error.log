@@ -27,3 +27,103 @@ Stack trace:
 #0 {main}
   thrown in /var/www/api-user-crud/public/index.php on line 11
 [23-Aug-2024 18:45:35 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/api-user-crud/src/core/Router.php on line 48
+[26-Aug-2024 23:28:04 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class 'App\Core\Config' not found in /var/www/api-user-crud/public/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /var/www/api-user-crud/public/index.php on line 12
+[26-Aug-2024 23:28:50 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 42
+[26-Aug-2024 23:28:50 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 43
+[26-Aug-2024 23:28:50 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 44
+[26-Aug-2024 23:28:50 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 45
+[26-Aug-2024 23:28:50 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 46
+[26-Aug-2024 23:28:50 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 47
+[26-Aug-2024 23:28:50 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 48
+[26-Aug-2024 23:28:50 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '12/02/1999' for column `api_user_crud`.`users`.`birth_date` at row 1 in /var/www/api-user-crud/src/repositories/UserRepository.php:50
+Stack trace:
+#0 /var/www/api-user-crud/src/repositories/UserRepository.php(50): PDOStatement->execute()
+#1 /var/www/api-user-crud/src/services/UserService.php(37): app\repositories\UserRepository->create()
+#2 /var/www/api-user-crud/src/controllers/UserController.php(28): app\services\UserService->create()
+#3 /var/www/api-user-crud/src/core/Router.php(41): app\controllers\UserController->create()
+#4 /var/www/api-user-crud/src/core/Main.php(23): app\core\Router->dispatch()
+#5 /var/www/api-user-crud/public/index.php(13): app\core\Main::initialize()
+#6 {main}
+  thrown in /var/www/api-user-crud/src/repositories/UserRepository.php on line 50
+[26-Aug-2024 23:30:10 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 42
+[26-Aug-2024 23:30:10 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 43
+[26-Aug-2024 23:30:10 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 44
+[26-Aug-2024 23:30:10 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 45
+[26-Aug-2024 23:30:10 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 46
+[26-Aug-2024 23:30:10 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 47
+[26-Aug-2024 23:30:10 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 48
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/api-user-crud/src/services/UserService.php on line 44
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Undefined index: email in /var/www/api-user-crud/src/services/UserService.php on line 45
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Undefined index: phoneNumber in /var/www/api-user-crud/src/services/UserService.php on line 46
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Undefined index: birthDate in /var/www/api-user-crud/src/services/UserService.php on line 47
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Undefined index: address in /var/www/api-user-crud/src/services/UserService.php on line 48
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 68
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 69
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 70
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 71
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 72
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 73
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 74
+[26-Aug-2024 23:31:39 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in /var/www/api-user-crud/src/repositories/UserRepository.php:77
+Stack trace:
+#0 /var/www/api-user-crud/src/repositories/UserRepository.php(77): PDOStatement->execute()
+#1 /var/www/api-user-crud/src/services/UserService.php(50): app\repositories\UserRepository->update()
+#2 /var/www/api-user-crud/src/controllers/UserController.php(39): app\services\UserService->update()
+#3 /var/www/api-user-crud/src/core/Router.php(39): app\controllers\UserController->update()
+#4 /var/www/api-user-crud/src/core/Main.php(23): app\core\Router->dispatch()
+#5 /var/www/api-user-crud/public/index.php(13): app\core\Main::initialize()
+#6 {main}
+  thrown in /var/www/api-user-crud/src/repositories/UserRepository.php on line 77
+[26-Aug-2024 23:33:52 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/api-user-crud/src/services/UserService.php on line 44
+[26-Aug-2024 23:33:52 America/Sao_Paulo] PHP Notice:  Undefined index: email in /var/www/api-user-crud/src/services/UserService.php on line 45
+[26-Aug-2024 23:33:52 America/Sao_Paulo] PHP Notice:  Undefined index: phoneNumber in /var/www/api-user-crud/src/services/UserService.php on line 46
+[26-Aug-2024 23:33:52 America/Sao_Paulo] PHP Notice:  Undefined index: birthDate in /var/www/api-user-crud/src/services/UserService.php on line 47
+[26-Aug-2024 23:33:52 America/Sao_Paulo] PHP Notice:  Undefined index: address in /var/www/api-user-crud/src/services/UserService.php on line 48
+[26-Aug-2024 23:33:52 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 64
+[26-Aug-2024 23:33:52 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 65
+[26-Aug-2024 23:33:52 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 66
+[26-Aug-2024 23:33:52 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 67
+[26-Aug-2024 23:33:52 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 68
+[26-Aug-2024 23:33:52 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in /var/www/api-user-crud/src/repositories/UserRepository.php:71
+Stack trace:
+#0 /var/www/api-user-crud/src/repositories/UserRepository.php(71): PDOStatement->execute()
+#1 /var/www/api-user-crud/src/services/UserService.php(50): app\repositories\UserRepository->update()
+#2 /var/www/api-user-crud/src/controllers/UserController.php(39): app\services\UserService->update()
+#3 /var/www/api-user-crud/src/core/Router.php(39): app\controllers\UserController->update()
+#4 /var/www/api-user-crud/src/core/Main.php(23): app\core\Router->dispatch()
+#5 /var/www/api-user-crud/public/index.php(13): app\core\Main::initialize()
+#6 {main}
+  thrown in /var/www/api-user-crud/src/repositories/UserRepository.php on line 71
+[27-Aug-2024 09:13:42 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/api-user-crud/src/services/UserService.php on line 44
+[27-Aug-2024 09:13:42 America/Sao_Paulo] PHP Notice:  Undefined index: email in /var/www/api-user-crud/src/services/UserService.php on line 45
+[27-Aug-2024 09:13:42 America/Sao_Paulo] PHP Notice:  Undefined index: phoneNumber in /var/www/api-user-crud/src/services/UserService.php on line 46
+[27-Aug-2024 09:13:42 America/Sao_Paulo] PHP Notice:  Undefined index: birthDate in /var/www/api-user-crud/src/services/UserService.php on line 47
+[27-Aug-2024 09:13:42 America/Sao_Paulo] PHP Notice:  Undefined index: address in /var/www/api-user-crud/src/services/UserService.php on line 48
+[27-Aug-2024 09:13:42 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 56
+[27-Aug-2024 09:13:42 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 57
+[27-Aug-2024 09:13:42 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 58
+[27-Aug-2024 09:13:42 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 59
+[27-Aug-2024 09:13:42 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 60
+[27-Aug-2024 09:13:42 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in /var/www/api-user-crud/src/repositories/UserRepository.php:63
+Stack trace:
+#0 /var/www/api-user-crud/src/repositories/UserRepository.php(63): PDOStatement->execute()
+#1 /var/www/api-user-crud/src/services/UserService.php(50): app\repositories\UserRepository->update()
+#2 /var/www/api-user-crud/src/controllers/UserController.php(39): app\services\UserService->update()
+#3 /var/www/api-user-crud/src/core/Router.php(39): app\controllers\UserController->update()
+#4 /var/www/api-user-crud/src/core/Main.php(23): app\core\Router->dispatch()
+#5 /var/www/api-user-crud/public/index.php(13): app\core\Main::initialize()
+#6 {main}
+  thrown in /var/www/api-user-crud/src/repositories/UserRepository.php on line 63
+[27-Aug-2024 09:20:44 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/api-user-crud/src/services/UserService.php on line 44
+[27-Aug-2024 09:20:44 America/Sao_Paulo] PHP Notice:  Undefined index: email in /var/www/api-user-crud/src/services/UserService.php on line 45
+[27-Aug-2024 09:20:44 America/Sao_Paulo] PHP Notice:  Undefined index: phoneNumber in /var/www/api-user-crud/src/services/UserService.php on line 46
+[27-Aug-2024 09:20:44 America/Sao_Paulo] PHP Notice:  Undefined index: birthDate in /var/www/api-user-crud/src/services/UserService.php on line 47
+[27-Aug-2024 09:20:44 America/Sao_Paulo] PHP Notice:  Undefined index: address in /var/www/api-user-crud/src/services/UserService.php on line 48
+[27-Aug-2024 09:29:31 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 64
+[27-Aug-2024 09:29:31 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 65
+[27-Aug-2024 09:29:31 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 66
+[27-Aug-2024 09:29:31 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 67
+[27-Aug-2024 09:29:31 America/Sao_Paulo] PHP Notice:  Only variables should be passed by reference in /var/www/api-user-crud/src/repositories/UserRepository.php on line 68

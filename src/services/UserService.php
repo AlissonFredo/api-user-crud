@@ -33,8 +33,6 @@ class UserService
         $user->setPhoneNumber($request['phoneNumber']);
         $user->setBirthDate($request['birthDate']);
         $user->setAddress($request['address']);
-        $user->setCreatedAt(date('Y-m-d'));
-        $user->setUpdatedAt(date('Y-m-d'));
 
         return $this->repository->create($user);
     }
@@ -48,7 +46,6 @@ class UserService
         $user->setPhoneNumber($request['phoneNumber']);
         $user->setBirthDate($request['birthDate']);
         $user->setAddress($request['address']);
-        $user->setUpdatedAt(date('Y-m-d'));
 
         return $this->repository->update($params['id'], $user);
     }
