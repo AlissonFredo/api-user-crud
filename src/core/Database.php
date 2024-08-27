@@ -33,8 +33,7 @@ class Database
             );
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $exception) {
-            // TODO - Fazer esse erro ser imprimido no arquivo de log.
-            echo "Connection error: " . $exception->getMessage();
+            error_log("Connection error: " . $exception->getMessage(), 3, __DIR__ . '/../logs/error.log');
         }
 
         return $this->conn;
